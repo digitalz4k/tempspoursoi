@@ -1,0 +1,28 @@
+// ------------------------------
+// MISC / HELPERS
+// ------------------------------
+html, body {
+    min-height: 100%;
+    height: 100%;
+}
+
+.wrapper, .off-canvas-wrap, .inner-wrap, .view-frame {
+    height: 100%;
+}
+
+.view-frame {
+    background: #fff;
+    list-style-type: none;
+}
+
+.hidethis {
+  display: none !important;
+}
+
+.invisible {
+  opacity: 0 !important;
+}
+
+i {
+    padding: 5px;
+}

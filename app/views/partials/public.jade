@@ -1,0 +1,65 @@
+.row
+    .public-page.large-12.columns
+        h4.subheader.text-center Mes services s'adressent aux <span>établissements et organismes</span> ainsi qu'aux <span>particuliers</span>.
+
+        .public-tabs
+            .small-12.medium10.large-10.small-centered.medium-centered.large-centered.columns.text-centered
+                ul.tabs(ng-click="tabChange($event)")
+                    li.tab-title(role="presentational")
+                        a(href="#tab1" ng-class="{'active':tabSelected=='#tab1'}") Soins individuels
+                    li.tab-title(role="presentational")
+                        a(href="#tab2" ng-class="{'active':tabSelected=='#tab2'}") Ateliers de groupe
+                .tabs-content
+                    section(class="ng-hide" ng-show="tabSelected=='#tab1'" id="tab1")
+                        #tab-content
+                            .small-12.columns
+                                .small-12.medium-4.large-4.columns
+                                    img(src="img/soinsindividuels2.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit.")
+                                .small-12.medium-8.large-8.columns.titles
+                                    p.subheader Construit dans un cadre spatio-temporel définit, ils répondent aux besoins et aux désirs exprimés par la personne. Ils peuvent également dans une visée pédagogique et thérapeutique participée au projet de vie définit entre l’établissement et le résident. Ils sont basés sur les soins portés sur l’apparence, les actes d’hygiène, de relaxation et de confort.
+                            .small-12.columns
+                                p.small-12.medium-12.large-12.columns
+                                    p Cette forme de prise en charge est un accompagnement complémentaire des soins médicaux et s’accorde parfaitement avec toutes interventions paramédicales ou de restaurations sociales.<br/>Avec des atouts qui lui sont propres, elle apporte un travail global sur la valorisation de l’image de soi et par conséquent de l’estime de soi.
+                                    
+                                    p <b>Grâce à l’esthétique, outil agréable et attirant,</b> il devient plus facile d’aborder certains sujets tels que l’hygiène et l’apparence. Sujets, qui dans d’autres contextes, peuvent être mal entendus, créer des complexes inexistants et amener la personne à un sentiment de dévalorisation. Le statut de professionnelle de l’esthétique permet de faire entendre plus facilement les conseils en matière de soins ; de plus les produits cosmétiques présentés sont adaptés et  interactifs. Les connaissances d’une spécialiste ne sont pas à négliger puisqu’elles donnent une véritable justesse aux informations. Le respect de l’individu, c’est aussi lui apporter des soins de qualité par des professionnels confirmés.
+
+                                    img.left.small-2.publicpic(src="/img/soins1.jpg" alt="pic 1")
+                                    p <b>Une médiation qui inspire également les notions de détente et de bien-être</b> et  permet d’approcher une personne dans sa sphère privée et intime avec plus de facilité.  Le contact par le toucher fait partie des besoins fondamentaux de l’être humain ; dans certains cas, corps endolori, atrophié, mutilé, suite à des chocs émotionnels et psychologiques violents ou encore dans certains cas de maladies (physiques / psychiatriques), le « toucher » devient un acte difficile même impossible.  L’aborder par un autre chemin comme le massage ou tout simplement sous prétexte de l’application d’un cosmétique permet de réapprendre cette notion, et de redécouvrir le contact et par le contact.
+
+                                    img.left.small-2.publicpic(src="/img/soins2.jpg" alt="pic 2")
+                                    p <b>Les soins de socio-esthétique font partie des soins de libre choix</b> ; lors d’un placement en foyer d’accueil ou d’une hospitalisation, une institution se doit pour le bon fonctionnement d’instaurer des règles de collectivité, ses règles ont tendance à créer chez l’être humain un sentiment de perte identitaire. Le risque est la diminution de la confiance en soi, la régression et une estime de soi dégradée. Toujours amenés dans un climat positif, les soins esthétiques sont reçus de manière générale avec envie et impatience. Leur rôle premier étant la notion de plaisir, ils ont la souplesse de pouvoir être reportés ou adaptés ou même annulés en fonction des besoins et des désirs présents. Une activité qui permet à la personne d’exprimer ses envies et ses refus, d’avoir la mainmise sur certains aspects de son emploi du temps et ainsi lui permettre une reconstitution avec son MOI.
+                                    p En résumé, cette médiation d’accompagnement supplémentaire permet de restaurer et/ou maintenir des capacités sur les soins corporels, d’apporter la notion de plaisir à travers le prendre soin et de permettre la communication et l’expression de ses ressentis corporels.
+                    section(class="ng-hide" ng-show="tabSelected=='#tab2'" id="tab2")
+                        #tab-content
+                            .small-12.columns
+                                .small-12.medium-4.large-4.columns
+                                    img(src="img/ateliersgroupe2.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit.")
+                                .small-12.medium-8.large-8.columns.titles
+                                    p.subheader Qu’ils soient ponctuels ou sous forme de module ces ateliers ont pour but communs de créer et/ou maintenir le lien social. Ils permettent aux participants d’exprimer des ressentis corporels dans un climat de confiance et de bien-être généré par l’activité « esthétique ».
+                            .small-12.columns
+                                p.small-12.medium-12.large-12.columns
+                                    p Chaque atelier étant basé sur un thème définit, il est possible de choisir avec soin les ingrédients utilisés ; ceux-ci sont tous naturels et en majorité labellisés Bio, un élément essentiel qui réduit considérablement le risque de réaction ou d’allergie. Les compétences propres de la psycho socio esthéticienne permettent une sélection précise qui allie originalité et efficacité des produits. Un assortiment d’ingrédients aux actifs olfactifs importants, aux textures diversifiées, avec des couleurs originales ou encore en les détournant de leur utilisation première, permet un travail sur le <b>développement de la polysensorialité et l’expression des ressentis corporels.</b>
+                                    p Les ateliers font partie <b>des pratiques actives</b> : ils amènent les participants à réaliser en autonomie (en partie ou en intégralité) le soin proposé. Lors d’un placement en foyer d’accueil ou d’une hospitalisation prolongée, la régression et la diminution de l’estime et de la confiance en soi sont des risques importants. Permettre aux personnes de découvrir, fabriquer et  appliquer un produit de soin par eux-mêmes <b>stimule les aptitudes restantes</b> et annule ainsi le sentiment d’incapacité.
+
+                                    div.gal
+                                        ul.small-block-grid-3
+                                            li
+                                                figure
+                                                    img(src="/img/ateliers1.jpg" alt="slide 1")
+                                                    figcaption
+                                                        
+                                            li
+                                                figure
+                                                    img(src="/img/ateliers2.jpg" alt="slide 2")
+                                                    figcaption
+                                                        
+                                            li
+                                                figure
+                                                    img(src="/img/ateliers4.jpg" alt="slide 3")
+                                                    figcaption
+                                                        
+
+                                    p L’esprit de la table ronde permet l’interaction entre les différents participants (résidants ou patients, aidants professionnels et/ou aidants familiaux) ; la répartition des personnes et des tâches est soigneusement étudiée, analysée et mise en place grâce à une méthodologie propre à la psycho socio esthétique.<br/> Chaque atelier inclut une partie théorique simple et permet à chacun d’exprimer ses connaissances, de partager son vécu. <b>L’échange et l’entraide sont mis à l’honneur.</b>
+                                    p Les ateliers de psycho socio esthétique sont <b>des activités gratifiantes</b> pour la structure. Ils ajoutent une animation ludique qui prend en considération les besoins propres de la personne puisqu’il s’agit de son apparence et de ses ressentis corporels. Le MOI est valorisé grâce à ses moments tournés vers la narcissisation.<br/>De plus, cette activité <b>peut participer activement au projet de vie</b> (soin) d’une personne : il est possible de travailler certaines mobilités, les capacités de coordinations, les perceptions de l’image corporelle ainsi que les aptitudes du respect des règles sociales.
+                                    p Cette médiation réalise au sein de l’établissement une activité socialisante dans un climat de valorisation de l’image personnelle et des capacités de chaque participant.
+div(ng-include='\'partials/footer\'')
