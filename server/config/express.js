@@ -20,7 +20,7 @@ var express = require('express'),
  */
 module.exports = function(app) {
     app.use(cors());
-    app.use(favicon());
+    app.use(favicon(config.root + '/app/img/favicon.ico'));
     app.use(express.static(path.join(config.root, '.tmp')));
     app.use(express.static(path.join(config.root, 'app')));
     app.set('views', config.root + '/app/views');
