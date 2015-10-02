@@ -9,7 +9,7 @@
     "npm": "3.3.5"
   },
   "scripts": {
-    "start": "./node_modules/.bin/nodemon server.js",
+    "start": "npm start",
     "postinstall": "node node_modules/bower/bin/bower install"
   },
   "author": "Leonardo da Silva",
