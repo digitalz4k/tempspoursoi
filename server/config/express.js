@@ -1,7 +1,7 @@
 'use strict';
 
 var express = require('express'),
-    favicon = require('static-favicon'),
+    favicon = require('serve-favicon'),
     logger = require('morgan'),
     bodyParser = require('body-parser'),
     methodOverride = require('method-override'),
