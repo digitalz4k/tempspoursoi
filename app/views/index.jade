@@ -4,7 +4,7 @@ block content
     div(class='wrapper')
         .inner-wrap
             div(ng-include='\'partials/header\'')
-            div(ng-view, class="view-frame")
+            div(ng-view, class="view-frame {{ pageClass }}")
 
     // Loading libraries
     script(src='libs/angular/angular.js')

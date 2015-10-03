@@ -9,21 +9,21 @@ div(ng-controller="HeaderCtrl")
                 a(href="#")
                     i.fa.fa-bars.fa-lg
 
-        top-bar-section.medium-9
-            ul.right
+        .icon-bar.four-up.right.text-center
+            ul
                 li
                     a(ng-class="getClass('/public')" href="public").item
-                        img(src="img/structures-etablissements.png" class="hide-for-small-only" alt="Etablissements, organismes et particuliers")
-                        label.text-center Public visé
+                        i.mdi.mdi-account-multiple
+                        label Public visé
                 li
                     a(ng-class="getClass('/formations')" href="formations").item
-                        img(src="img/formations-metiers-esthetique.png" class="hide-for-small-only" alt="Formations aux métiers de l'esthétique")
+                        i.mdi.mdi-book-multiple
                         label.text-center Formations
-                li
+                li               
                     a(ng-class="getClass('/profil')" href="profil").item
-                        img(src="img/parcours-pse-drome.png" class="hide-for-small-only" alt="Parcours de Laura Schmit, psycho socio esthéticiennedans la Drôme")
+                        i.mdi.mdi-briefcase
                         label.text-center Mon parcours
                 li
                     a(ng-class="getClass('/contact')" href="contact").item
-                        img(src="img/informations-psycho-socio-esthetique.png" class="hide-for-small-only" alt="Informations sur la psycho socio esthétique")
+                        i.mdi.mdi-cellphone-link
                         label.text-center Contact

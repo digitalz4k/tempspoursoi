@@ -2,5 +2,5 @@
 
 angular.module('pfoApp')
     .controller('ContactCtrl', function ($scope) {
-        $scope.brand = "Contact";
+        $scope.pageClass = "page-contact";
     });

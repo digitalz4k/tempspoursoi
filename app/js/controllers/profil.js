@@ -2,7 +2,7 @@
 
 angular.module('pfoApp')
     .controller('ProfilCtrl', function ($scope) {
-        $scope.brand = "Mon parcours";
+        $scope.pageClass = "page-profil";
 
         $scope.tabSelected = "#tab1";
         $scope.tabChange = function(e){

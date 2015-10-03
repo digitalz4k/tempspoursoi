@@ -20,26 +20,32 @@
             }
         }
     }
+
+    .icon-bar {
+        margin-right: 0.5em;
+        li { 
+            float: left;
+            padding: 10px 15px 0 15px; 
+
+            a {
+                color: #4aafdd;
+
+                i { font-size: 3em; @include transition(all, 0.3s, ease); }
+                label { color: #4aafdd; font-family: $serif-font; @include transition(all, 0.3s, ease-in); }
+            }
+
+            a:hover {
+                
+                i { font-size: 4em; color: #f9b35c; @include transition(all, 0.3s, ease); }
+                label { display: none; color: #fff; cursor: none; @include transition(all, 0.3s, ease-out); }
+            }
+        }
+
+        
+
+    }
 }
 
-.top-bar-section {
-    ul li a {
-        padding-bottom: 6px!important;
-        padding-top: 7px!important;
-        transition: all 300ms linear;
-    }
-    ul li a img {
-        background: #4aafdd;
-        padding-top: 2px;
-        border-radius: 50%;
-        transition: all 300ms linear;
-    }
-    label {color: #4aafdd;}
-    a:hover > label {
-        color: #fff;
-        transition: all 300ms linear;
-    }
-}
 
 footer {
     margin-top: 1rem;

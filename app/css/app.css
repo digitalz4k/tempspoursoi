@@ -17071,8 +17071,9 @@ th.hide-for-touch {
   bottom: 0;
   padding: 0;
   margin: 0 23%;
+  text-align: center;
 }
-.main-container .home-info .social ul, .main-container .home-info .social li {
+.main-container .home-info .social li {
   float: left;
   list-style: none;
   display: inline-block;
@@ -17409,22 +17410,20 @@ i {
 }
 
 .view-frame.ng-enter {
-  -webkit-animation: 1s fade-in;
-  -moz-animation: 1s fade-in;
-  -o-animation: 1s fade-in;
-  animation: 1s fade-in;
+  -webkit-animation: 2s fade-in;
+  -moz-animation: 2s fade-in;
+  animation: 2s fade-in;
   z-index: 100;
 }
 
 .view-frame.ng-leave {
   -webkit-animation: 0.5s fade-out;
   -moz-animation: 0.5s fade-out;
-  -o-animation: 0.5s fade-out;
   animation: 0.5s fade-out;
   z-index: 99;
 }
 
-@keyframes fade-in {
+@-webkit-keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -17440,7 +17439,7 @@ i {
     opacity: 1;
   }
 }
-@-webkit-keyframes fade-in {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -17448,7 +17447,7 @@ i {
     opacity: 1;
   }
 }
-@keyframes fade-out {
+@-webkit-keyframes fade-out {
   from {
     opacity: 1;
   }
@@ -17464,7 +17463,7 @@ i {
     opacity: 0;
   }
 }
-@-webkit-keyframes fade-out {
+@keyframes fade-out {
   from {
     opacity: 1;
   }
@@ -17472,6 +17471,10 @@ i {
     opacity: 0;
   }
 }
+.page-home.ng-enter {
+  background: #f9b35c;
+}
+
 .top-bar {
   position: fixed;
   width: 100%;
@@ -17486,24 +17489,43 @@ i {
 .top-bar .title-area .name img {
   margin-top: -3px;
 }
-
-.top-bar-section ul li a {
-  padding-bottom: 6px !important;
-  padding-top: 7px !important;
-  transition: all 300ms linear;
+.top-bar .icon-bar {
+  margin-right: 0.5em;
 }
-.top-bar-section ul li a img {
-  background: #4aafdd;
-  padding-top: 2px;
-  border-radius: 50%;
-  transition: all 300ms linear;
+.top-bar .icon-bar li {
+  float: left;
+  padding: 10px 15px 0 15px;
 }
-.top-bar-section label {
+.top-bar .icon-bar li a {
   color: #4aafdd;
 }
-.top-bar-section a:hover > label {
+.top-bar .icon-bar li a i {
+  font-size: 3em;
+  -webkit-transition: all, 0.3s, ease;
+  -moz-transition: all, 0.3s, ease;
+  transition: all, 0.3s, ease;
+}
+.top-bar .icon-bar li a label {
+  color: #4aafdd;
+  font-family: "Roboto", serif;
+  -webkit-transition: all, 0.3s, ease-in;
+  -moz-transition: all, 0.3s, ease-in;
+  transition: all, 0.3s, ease-in;
+}
+.top-bar .icon-bar li a:hover i {
+  font-size: 4em;
+  color: #f9b35c;
+  -webkit-transition: all, 0.3s, ease;
+  -moz-transition: all, 0.3s, ease;
+  transition: all, 0.3s, ease;
+}
+.top-bar .icon-bar li a:hover label {
+  display: none;
   color: #fff;
-  transition: all 300ms linear;
+  cursor: none;
+  -webkit-transition: all, 0.3s, ease-out;
+  -moz-transition: all, 0.3s, ease-out;
+  transition: all, 0.3s, ease-out;
 }
 
 footer {

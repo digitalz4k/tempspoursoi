@@ -2,7 +2,7 @@
 
 angular.module('pfoApp')
     .controller('PublicCtrl', function ($scope) {
-        $scope.brand = "Public visé";
+        $scope.pageClass = "page-public";
 
         $scope.tabSelected = "#tab1";
         $scope.tabChange = function(e){
