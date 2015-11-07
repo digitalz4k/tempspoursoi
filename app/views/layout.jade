@@ -2,24 +2,40 @@ doctype html
 html(ng-app="pfoApp")
   head
     base(href="/")
-    title Un temps pour soi - Laura Schmit psycho socio esthéticienne
+    title Un temps pour soi - Laura Schmit, psycho socio esthéticienne - Bouches du Rhône
     meta(charset='utf-8')
-    meta(name='keywords', content='digitalz sdk starterkit development nodejs angularjs foundation5 bourbon sass')
-    meta(name='description', content='Install and create your API server and client version in seconds...')
-    meta(name='author', content='digitalz')
+    meta(name='keywords', content='psycho socio esthétique, Bouches du Rhône, valorisation de l'image, massage psycho corporel, soins esthétiques, ateliers thérapeutiques, formations esthétique, hygiène et apparence, accompagnement handicap et personnes âgées, estime de soi, image de soi, confiance en soi')
+    meta(name='description', content='Psycho socio esthéticienne dans les Bouches du Rhône, Laura Schmit accompagne des personnes dans leur réappropriation psycho-corporelle.')
+    meta(name='author', content='Laura Schmit')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name="fragment", content="!")
 
+    // Social meta
+    meta(property='og:title' content='Laura Schmit psycho socio esthéticienne dans les Bouches du Rhône')
+    meta(property='og:site_name' content='Un temps pour soi')
+    meta(property='og:url' content='http://www.socioestheticienne.fr')
+    meta(property='og:type' content='website')
+    meta(property='og:description' content='Psycho socio esthéticienne dans les Bouches du Rhône, Laura Schmit accompagne des personnes dans leur réappropriation psycho-corporelle.')
+    meta(property='og:image' content='https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/og_image.png')
+    meta(property='og:locale' content='fr_FR')
+    meta(property='article:author' content='https://www.facebook.com/Laura1TPS')
+    meta(property='article:publisher' content='https://www.facebook.com/Un-temps-pour-soi-762897910441998')
+    meta(name='twitter:card' content='summary')
+    meta(name='twitter:title' content='Laura Schmit psycho socio esthéticienne dans les Bouches du Rhône')
+    meta(name='twitter:description' content='Psycho socio esthéticienne dans les Bouches du Rhône, Laura Schmit accompagne des personnes dans leur réappropriation psycho-corporelle.')
+    meta(name='twitter:url' content='http://www.socioestheticienne.fr')
+    meta(name='twitter:image' content='https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/tt_image.png')
+
     // Add minified css when production
-    //link(href="css/app.min.css" rel="stylesheet")
-    link(href='css/app.css' rel='stylesheet')
+    link(href="css/app.min.css" rel="stylesheet")
+    //link(href='css/app.css' rel='stylesheet')
 
     link(href='libs/animate.css/animate.min.css', rel='stylesheet')
     link(href='libs/mdi/css/materialdesignicons.min.css' rel='stylesheet')
     script(src="libs/dz-assets/js/vendor/modernizr.js")
 
     // Grunt Live Reload >> Remove it when production <<
-    script(src="http://localhost:35729/livereload.js")
+    //script(src="http://localhost:35729/livereload.js")
     block head
 
   body
