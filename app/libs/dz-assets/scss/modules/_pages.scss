@@ -38,7 +38,7 @@
         background-repeat: none;
         opacity: 0;
         z-index: 0;
-        animation: imageAnimation 40s linear infinite 0s; 
+        @include animation(imageAnimation 40s linear infinite 0s); 
     }
 
     .cb-slideshow li:nth-child(1) span { 
@@ -46,51 +46,51 @@
     }
     .cb-slideshow li:nth-child(2) span { 
         background-image: url("https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/homeb.jpg");
-        animation-delay: 10s; 
+        @include animation-delay(10s); 
     }
     .cb-slideshow li:nth-child(3) span { 
         background-image: url("https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/homec.jpg");
-        animation-delay: 20s; 
+        @include animation-delay(20s); 
     }
     .cb-slideshow li:nth-child(4) span { 
         background-image: url("https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/homed.jpg");
-        animation-delay: 30s; 
+        @include animation-delay(30s); 
     }
     .cb-slideshow li:nth-child(5) span { 
         background-image: url("https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/homee.jpg");
-        animation-delay: 40s; 
+        @include animation-delay(40s); 
     }
 
     .cb-slideshow li:nth-child(2) div { 
-        animation-delay: 10s; 
+        @include animation-delay(10s); 
     }
     .cb-slideshow li:nth-child(3) div { 
-        animation-delay: 20s; 
+        @include animation-delay(20s); 
     }
     .cb-slideshow li:nth-child(4) div { 
-        animation-delay: 30s; 
+        @include animation-delay(30s); 
     }
     .cb-slideshow li:nth-child(5) div { 
-        animation-delay: 40s; 
+        @include animation-delay(40s); 
     }
 
-    @keyframes imageAnimation { 
+    @include keyframes(imageAnimation) { 
     0% {
         opacity: 0;
-        animation-timing-function: ease-in;
+        @include animation-timing-function(ease-in);
     }
     8% {
         opacity: 1;
-        transform: scale(1.05);
-        animation-timing-function: ease-out;
+        @include transform(scale(1.05));
+        @include animation-timing-function(ease-out);
     }
     17% {
         opacity: 1;
-        transform: scale(1.1) rotate(3deg);
+        @include transform(scale(1.1) rotate(3deg));
     }
     25% {
         opacity: 0;
-        transform: scale(1.1) rotate(3deg);
+        @include transform(scale(1.1) rotate(3deg));
     }
     100% { opacity: 0 }
 }
