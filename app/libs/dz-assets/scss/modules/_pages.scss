@@ -42,22 +42,22 @@
     }
 
     .cb-slideshow li:nth-child(1) span { 
-        background-image: url(../img/homea.jpg) 
+        background-image: url("https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/homea.jpg") 
     }
     .cb-slideshow li:nth-child(2) span { 
-        background-image: url(../img/homeb.jpg);
+        background-image: url("https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/homeb.jpg");
         animation-delay: 10s; 
     }
     .cb-slideshow li:nth-child(3) span { 
-        background-image: url(../img/homec.jpg);
+        background-image: url("https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/homec.jpg");
         animation-delay: 20s; 
     }
     .cb-slideshow li:nth-child(4) span { 
-        background-image: url(../img/homed.jpg);
+        background-image: url("https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/homed.jpg");
         animation-delay: 30s; 
     }
     .cb-slideshow li:nth-child(5) span { 
-        background-image: url(../img/homees.jpg);
+        background-image: url("https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/homee.jpg");
         animation-delay: 40s; 
     }
 
@@ -285,7 +285,7 @@
             text-align: left;
 
             li {
-                list-style-image: url(../img/butterfly.png);
+                list-style-image: url("https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/butterfly.png");
                 margin-bottom: 0.8rem;
                 margin-left: 30px;
                 }
@@ -410,7 +410,7 @@
 .auth-container {
     height: 100%;
     margin-top: -45px;
-    background: url(https://s3.amazonaws.com/ooomf-com-files/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg) no-repeat center center fixed;
+    background: url("https://s3.amazonaws.com/ooomf-com-files/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
