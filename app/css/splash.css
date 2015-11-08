@@ -2,10 +2,9 @@
 //       SPLASH
 // ------------------------------
 
-[ng-cloak].splash {
-  display: block !important;
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
 }
-[ng-cloak] {display: none;}
 
 .splash {
   position: fixed;
@@ -15,10 +14,15 @@
   height: 100%;
   background: #fff;
   text-align: center;
+  z-index: -555;
 }
 
 .splash .preboot-loader {
   position: relative;
   top: 40%;
   color: #ff8f6c;
+}
+
+.splash p {
+  font-size: 1.5em;
 }

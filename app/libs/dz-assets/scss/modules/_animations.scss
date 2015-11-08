@@ -11,7 +11,7 @@
 }
 
 .view-frame.ng-enter {
-  @include animation(2s fade-in);
+  @include animation(0.5s fade-in);
   z-index: 100;
 }
 

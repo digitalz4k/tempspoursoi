@@ -17492,9 +17492,9 @@ i {
 }
 
 .view-frame.ng-enter {
-  -webkit-animation: 2s fade-in;
-  -moz-animation: 2s fade-in;
-  animation: 2s fade-in;
+  -webkit-animation: 0.5s fade-in;
+  -moz-animation: 0.5s fade-in;
+  animation: 0.5s fade-in;
   z-index: 100;
 }
 
