@@ -16978,6 +16978,8 @@ th.hide-for-touch {
   background-repeat: none;
   opacity: 0;
   z-index: 0;
+  -webkit-animation: imageAnimation 40s linear infinite 0s;
+  -moz-animation: imageAnimation 40s linear infinite 0s;
   animation: imageAnimation 40s linear infinite 0s;
 }
 .main-container .cb-slideshow li:nth-child(1) span {
@@ -16985,48 +16987,124 @@ th.hide-for-touch {
 }
 .main-container .cb-slideshow li:nth-child(2) span {
   background-image: url("https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/homeb.jpg");
+  -webkit-animation-delay: 10s;
+  -moz-animation-delay: 10s;
   animation-delay: 10s;
 }
 .main-container .cb-slideshow li:nth-child(3) span {
   background-image: url("https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/homec.jpg");
+  -webkit-animation-delay: 20s;
+  -moz-animation-delay: 20s;
   animation-delay: 20s;
 }
 .main-container .cb-slideshow li:nth-child(4) span {
   background-image: url("https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/homed.jpg");
+  -webkit-animation-delay: 30s;
+  -moz-animation-delay: 30s;
   animation-delay: 30s;
 }
 .main-container .cb-slideshow li:nth-child(5) span {
   background-image: url("https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/homee.jpg");
+  -webkit-animation-delay: 40s;
+  -moz-animation-delay: 40s;
   animation-delay: 40s;
 }
 .main-container .cb-slideshow li:nth-child(2) div {
+  -webkit-animation-delay: 10s;
+  -moz-animation-delay: 10s;
   animation-delay: 10s;
 }
 .main-container .cb-slideshow li:nth-child(3) div {
+  -webkit-animation-delay: 20s;
+  -moz-animation-delay: 20s;
   animation-delay: 20s;
 }
 .main-container .cb-slideshow li:nth-child(4) div {
+  -webkit-animation-delay: 30s;
+  -moz-animation-delay: 30s;
   animation-delay: 30s;
 }
 .main-container .cb-slideshow li:nth-child(5) div {
+  -webkit-animation-delay: 40s;
+  -moz-animation-delay: 40s;
   animation-delay: 40s;
+}
+@-webkit-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    -webkit-animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+    -webkit-transform: scale(1.1) rotate(3deg);
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: scale(1.1) rotate(3deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -moz-animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    -moz-transform: scale(1.05);
+    -moz-animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+    -moz-transform: scale(1.1) rotate(3deg);
+  }
+  25% {
+    opacity: 0;
+    -moz-transform: scale(1.1) rotate(3deg);
+  }
+  100% {
+    opacity: 0;
+  }
 }
 @keyframes imageAnimation {
   0% {
     opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   8% {
     opacity: 1;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
     transform: scale(1.05);
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   17% {
     opacity: 1;
+    -webkit-transform: scale(1.1) rotate(3deg);
+    -moz-transform: scale(1.1) rotate(3deg);
+    -ms-transform: scale(1.1) rotate(3deg);
+    -o-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
   25% {
     opacity: 0;
+    -webkit-transform: scale(1.1) rotate(3deg);
+    -moz-transform: scale(1.1) rotate(3deg);
+    -ms-transform: scale(1.1) rotate(3deg);
+    -o-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
   100% {
@@ -17407,6 +17485,10 @@ i {
 
 .view-frame.ng-enter, .view-frame.ng-leave {
   background: white;
+}
+
+.view-frame.ng-enter, .view-frame.ng-leave > [ng-cloak] {
+  display: none;
 }
 
 .view-frame.ng-enter {

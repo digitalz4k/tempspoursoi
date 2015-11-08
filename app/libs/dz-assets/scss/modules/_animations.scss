@@ -6,6 +6,10 @@
   background: white;
 }
 
+.view-frame.ng-enter, .view-frame.ng-leave > [ng-cloak] {
+  display: none;
+}
+
 .view-frame.ng-enter {
   @include animation(2s fade-in);
   z-index: 100;
