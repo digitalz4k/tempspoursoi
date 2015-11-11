@@ -4,6 +4,7 @@ angular.module('pfoApp', [
   'ngCookies',
   'ngRoute',
   'ngAnimate',
+  'ngMessages',
   'ngResource',
   'ngSanitize',
   'mm.foundation'

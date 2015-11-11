@@ -31,21 +31,57 @@
                             a(href="mailto:untempspoursoi26@live.fr") untempspoursoi26(a)live.fr
                     p.text-center Votre demande sera traitée dans les plus brefs délais.
             .contact-form.small-12.medium-6.large-6.columns
-                .form
+                form(name="contactForm" ng-submit="postEmail(contactForm.$valid)" novalidate)
                     .row
-                        .large-6.columns
-                            input(type="text" placeholder="Nom complet (requis)" autofocus)
-                        .large-6.columns
-                            input(type="text" placeholder="Société")
-                        .large-6.columns
-                            input(type="text" placeholder="Adresse email (requis)")
-                        .large-6.columns
-                            input(type="text" placeholder="Numéro de téléphone (requis)")
-                    .row
-                        .small-12.large-12.columns
-                            textarea(placeholder="Ecrivez votre message ici.")
-                    .row
-                        a.button.small.secondary.right(href="#") Envoyer
+                    
+                        .form-group.large-6.columns
+                            input(class="form-control" 
+                                    name="name" 
+                                    type="text" 
+                                    ng-model="fname" 
+                                    placeholder="Nom complet (requis)" 
+                                    required 
+                                    ng-minlength="3")
+                            small(class="error" ng-show="contactForm.fname.$invalid && !contactForm.fname.$pristine" class="help-block") Votre nom est requis.
+                            
+                        .form-group.large-6.columns
+                            input(class="form-control" 
+                                    type="text" 
+                                    name="entreprise" 
+                                    ng-model="fentreprise" 
+                                    placeholder="Société")
+                                    
+                        .form-group.large-6.columns
+                            input(type="text" 
+                                    class="form-control" 
+                                    name="email" 
+                                    ng-model="femail" 
+                                    placeholder="Adresse email (requis)" 
+                                    required)
+                            .help-block(ng-messages="contactForm.femail.$error" ng-show="contactForm.femail.$touched")
+                                p(ng-message="required") This field is required
+                                p(ng-message="minlength") This field is too short
+                                p(ng-message="maxlength") This field is too long
+                                p(ng-message="required") This field is required
+                                p(ng-message="email") This needs to be a valid email
+                            
+                        .form-group.large-6.columns
+                            input(type="text" 
+                                    class="form-control" 
+                                    name="phone" 
+                                    ng-model="fphone" 
+                                    placeholder="Numéro de téléphone" 
+                                    ng-minlength="10" 
+                                    ng-maxlength="10")
+                            
+                        .form-group
+                            textarea(ng-model="fmessage" 
+                                    class="form-control" 
+                                    placeholder="Ecrivez votre message ici." 
+                                    required)
+                                    
+                        button.button.small.secondary.expand(type="submit" ng-disabled="contactForm.$invalid" ng-class="{'disabled-class': contactForm.$invalid}") {{button}}
+                        
             .contact-social.small-centered.columns.show-for-small-only
                 ul.inline-list
                     li

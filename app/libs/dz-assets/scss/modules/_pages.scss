@@ -359,47 +359,42 @@
     ul, li { list-style: none;}
 }
 
-.form {
-    input {
-        background: #f08875;
-        color: #fff;
-        opacity: 0.5;
-        border: none;
-        box-shadow: none;
+form {
+    
+    .ng-valid       {  }
+    .ng-invalid     {  }
+    .ng-pristine    {  }
+    .ng-dirty       {  }
+    .ng-touched     {  }
+    
+    .form-group {
+    
+        input, textarea {
+          display: block;
+          margin: 0;
+          width: 100%;          
+          appearance: none;
+          box-shadow: none;
+          border-radius: none;
+          padding: 10px;
+          border: none;
+          border-bottom: solid 1px #f08875;
+          transition: border 0.3s;
+          color: #f08875;
+        }
+        input[type="text"]:focus, textarea:focus {
+          outline: none;
+          border-bottom: solid 3px #f08875;
+          box-shadow: none;
+          background: none;
+          color: #f08875;
+        }
     }
-    input:focus {
-        background: #f9b35c;
-        color: #fff;
-        opacity: 1;
-        border: none;
-        box-shadow: none;
+    
+    button[disabled] {
+        opacity: 0!important;
+        transition: all 1s linear;
     }
-
-    textarea {
-        background: #f08875;
-        color: #fff;
-        opacity: 0.5;
-        border: none;
-        box-shadow: none;
-    }
-    textarea:focus {
-        background: #f9b35c;
-        color: #fff;
-        opacity: 1;
-        border: none;
-        box-shadow: none;
-    }
-
-    input::-webkit-input-placeholder { color: #fff; }
-    input::-moz-placeholder { color: #fff; }
-    input:-ms-input-placeholder { color: #fff; }
-
-    textarea::-webkit-input-placeholder { color: #fff; }
-    textarea::-moz-placeholder { color: #fff; }
-    textarea:-ms-input-placeholder { color: #fff; }
-
-    .secondary {  background-color: #f08875; color: #fff; opacity: 0.5; transition: background-color, 300ms, ease-out }
-    .secondary:hover { background-color: #f9b35c; color: #fff; opacity: 1; transition: background-color, 300ms, ease-out}
 }
 
 

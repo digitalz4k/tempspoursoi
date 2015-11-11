@@ -4,9 +4,43 @@ var api = require('./lib/api'),
     index = require('./lib'),
     users = require('./lib/users'),
     session = require('./lib/session'),
-    middleware = require('./middleware');
+    middleware = require('./middleware'),
+    nodemailer = require('nodemailer');
+
+var transporter = nodemailer.createTransport({
+    service: 'hotmail',
+    auth: {
+        user: 'untempspoursoi26@live.fr',
+        pass: '191287lS'
+    }
+});
+
 
 module.exports = function(app) {
+    
+// Nodemailer
+    app.post('/postEmail', function(req, res){
+        var mailOptions = {
+            from: req.body.name + req.body.email,
+            to: 'untempspoursoi26@live.fr',
+            subject: "Contact de " + req.body.name,
+            text: 'Nom : ' + req.body.name + "Email : " + req.body.email + "Société : " + req.body.entreprise + "Téléphone : " + req.body.phone + "Message : " + req.body.message,
+            html: `<b style='color: #006600'>Contact</b>
+                   <p>Nom: ${req.body.name}</p>
+                   <p>Société: ${req.body.entreprise}</p>
+                   <p>Téléphone: ${req.body.phone}</p>
+                   <p>Email: ${req.body.email}</p>
+                   <p>Message: ${req.body.message}</p>`
+        };
+        transporter.sendMail(mailOptions, function(error, info){
+            if(error){
+                console.log(error);
+            }else{
+                console.log('Message sent: ' + info.response);
+                res.send(200);
+            }
+        });
+    });
 
 // API Routing
   app.route('/api/v1/todos')

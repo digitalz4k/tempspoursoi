@@ -17383,63 +17383,29 @@ th.hide-for-touch {
   list-style: none;
 }
 
-.form input {
-  background: #f08875;
-  color: #fff;
-  opacity: 0.5;
-  border: none;
+form .form-group input, form .form-group textarea {
+  display: block;
+  margin: 0;
+  width: 100%;
+  appearance: none;
   box-shadow: none;
-}
-.form input:focus {
-  background: #f9b35c;
-  color: #fff;
-  opacity: 1;
+  border-radius: none;
+  padding: 10px;
   border: none;
+  border-bottom: solid 1px #f08875;
+  transition: border 0.3s;
+  color: #f08875;
+}
+form .form-group input[type="text"]:focus, form .form-group textarea:focus {
+  outline: none;
+  border-bottom: solid 3px #f08875;
   box-shadow: none;
+  background: none;
+  color: #f08875;
 }
-.form textarea {
-  background: #f08875;
-  color: #fff;
-  opacity: 0.5;
-  border: none;
-  box-shadow: none;
-}
-.form textarea:focus {
-  background: #f9b35c;
-  color: #fff;
-  opacity: 1;
-  border: none;
-  box-shadow: none;
-}
-.form input::-webkit-input-placeholder {
-  color: #fff;
-}
-.form input::-moz-placeholder {
-  color: #fff;
-}
-.form input:-ms-input-placeholder {
-  color: #fff;
-}
-.form textarea::-webkit-input-placeholder {
-  color: #fff;
-}
-.form textarea::-moz-placeholder {
-  color: #fff;
-}
-.form textarea:-ms-input-placeholder {
-  color: #fff;
-}
-.form .secondary {
-  background-color: #f08875;
-  color: #fff;
-  opacity: 0.5;
-  transition: background-color, 300ms, ease-out;
-}
-.form .secondary:hover {
-  background-color: #f9b35c;
-  color: #fff;
-  opacity: 1;
-  transition: background-color, 300ms, ease-out;
+form button[disabled] {
+  opacity: 0 !important;
+  transition: all 1s linear;
 }
 
 .auth-container {
