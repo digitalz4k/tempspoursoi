@@ -17523,6 +17523,10 @@ i {
   background: #f9b35c;
 }
 
+[ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak {
+  display: none;
+}
+
 .top-bar {
   position: fixed;
   width: 100%;

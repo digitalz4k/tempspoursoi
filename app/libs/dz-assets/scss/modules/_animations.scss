@@ -35,3 +35,7 @@
 .page-home.ng-enter {
   background: #f9b35c;
 }
+
+[ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak {
+    display: none;
+}
