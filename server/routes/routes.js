@@ -5,15 +5,16 @@ var api = require('./lib/api'),
     users = require('./lib/users'),
     session = require('./lib/session'),
     middleware = require('./middleware'),
-    nodemailer = require('nodemailer');
+    nodemailer = require('nodemailer'),
+    sgTransport = require('nodemailer-sendgrid-transport');
 
-var transporter = nodemailer.createTransport({
-    service: 'hotmail',
+var transporter = nodemailer.createTransport(sgTransport({
+    service: 'SendGrid',
     auth: {
-        user: 'untempspoursoi26@live.fr',
-        pass: '191287lS'
+        api_user: 'digitalz',
+        api_key: '00789321dz'
     }
-});
+}));
 
 
 module.exports = function(app) {
