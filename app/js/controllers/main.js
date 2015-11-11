@@ -1,9 +1,6 @@
 'use strict';
 
 angular.module('pfoApp')
-    .controller('MainCtrl', function ($scope, $timeout) {
+    .controller('MainCtrl', function ($scope) {
         $scope.pageClass = "page-home";
-        $scope.loaded = false;
-
-        $timeout(function() { $scope.loaded = true; }, 5000);
     });
