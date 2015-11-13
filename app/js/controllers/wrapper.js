@@ -1,8 +1,12 @@
 'use strict';
 
 angular.module('pfoApp')
-    .controller('WrapperCtrl', function ($rootScope) {
+    .controller('wrapperCtrl', function ($scope) {
     
-        $rootScope.prerender = 'test';
+        $scope.seo = {
+            pageTitle : 'Un temps pour Soi - Laura Schmit, psycho socio esthéticienne - Bouches du Rhône',
+            pageDescription: 'Psycho socio esthéticienne dans les Bouches du Rhône, Laura Schmit accompagne les personnes dans leur réappropriation psycho-corporelle.',
+            siteAuthor: 'Laura Schmit'            
+        };
     
     });

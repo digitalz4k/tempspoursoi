@@ -1,15 +1,14 @@
 doctype html
-html(ng-app="pfoApp" ng-controller="WrapperCtrl")
+html(ng-app="pfoApp" ng-controller="wrapperCtrl")
   head
+    meta(name="fragment", content="!")
     base(href="/")
-    title Un temps pour Soi - Laura Schmit, psycho socio esthéticienne - Bouches du Rhône
+    title {{ seo.pageTitle }}
     meta(charset='utf-8')
     meta(name='keywords', content="psycho socio esthétique, Bouches du Rhône, valorisation de l'image, massage psycho corporel, soins esthétiques, ateliers thérapeutiques, formations esthétique, hygiène et apparence, accompagnement handicap et personnes âgées, estime de soi, image de soi, confiance en soi")
-
-    meta(name='description', content='Psycho socio esthéticienne dans les Bouches du Rhône, Laura Schmit accompagne les personnes dans leur réappropriation psycho-corporelle.')
-    meta(name='author', content='Laura Schmit')
+    meta(name="description" content="{{ seo.pageDescription }}")
+    meta(name='author', content='{{ seo.siteAuthor}}')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(name="fragment", content="!")
 
     // Social meta
     meta(property='og:title', content='Un Temps pour Soi - Laura Schmit')
@@ -26,12 +25,6 @@ html(ng-app="pfoApp" ng-controller="WrapperCtrl")
     meta(name='twitter:description', content='Psycho socio esthéticienne dans les Bouches du Rhône, Laura Schmit accompagne les personnes dans leur réappropriation psycho-corporelle.')
     meta(name='twitter:url', content='http://www.socioestheticienne.fr')
     meta(name='twitter:image' content='https://s3.eu-central-1.amazonaws.com/www.socioestheticienne.fr/tt_image.jpg')
-
-    // Add pre-bootstrap styles
-    link(href="css/splash.css" rel="stylesheet")
-    
-    script.
-        {{prerender}}
     
     //Google Analytics
     script.
