@@ -1,12 +1,12 @@
 @charset "UTF-8";
-@import "http://fonts.googleapis.com/css?family=Open+Sans:300,800|Roboto:400,700";
-@import "http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic";
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import "http://fonts.googleapis.com/css?family=Open+Sans:300,800|Roboto:400,700";
+@import "http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic";
 html {
   font-family: sans-serif;
   /* 1 */
