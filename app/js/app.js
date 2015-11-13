@@ -1,11 +1,9 @@
 'use strict';
 
 angular.module('pfoApp', [
-  'ngCookies',
   'ngRoute',
   'ngAnimate',
   'ngResource',
-  'ngSanitize',
   'mm.foundation'
   ])
 

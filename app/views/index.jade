@@ -1,8 +1,7 @@
 extends layout
 
 block content
-    div
-        
+    div        
         div(class="wrapper")
             .inner-wrap
                 div(ng-include='\'partials/header\'')
@@ -24,8 +23,6 @@ block content
     script(src='libs/angular/angular.js')
     script(src='libs/angular-resource/angular-resource.js')
     script(src='libs/angular-route/angular-route.js')
-    script(src='libs/angular-cookies/angular-cookies.js')
-    script(src='libs/angular-sanitize/angular-sanitize.js')
     script(src='libs/angular-animate/angular-animate.js')
     script(src='libs/angular-foundation/mm-foundation-tpls.js')
     script(src='libs/dz-assets/js/vendor/jquery.js')
@@ -41,6 +38,5 @@ block content
     script(src='js/controllers/formations.js')
     script(src='js/controllers/profil.js')
     script(src='js/controllers/contact.js')
-    script(src='js/services/postemail.js')
     script(src='js/directives/mongooseError.js')
     script $(document).foundation();
