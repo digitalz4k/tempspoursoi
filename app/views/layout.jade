@@ -1,5 +1,5 @@
 doctype html
-html(ng-app="pfoApp")
+html(ng-app="pfoApp" ng-controller="WrapperCtrl")
   head
     base(href="/")
     title Un temps pour soi - Laura Schmit, psycho socio esthéticienne - Bouches du Rhône
@@ -29,6 +29,9 @@ html(ng-app="pfoApp")
 
     // Add pre-bootstrap styles
     link(href="css/splash.css" rel="stylesheet")
+    
+    script.
+        {{prerender}}
     
     //Google Analytics
     script.
