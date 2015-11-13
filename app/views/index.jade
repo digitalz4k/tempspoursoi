@@ -21,8 +21,11 @@ block content
 
     // Loading libraries
     script(src='libs/angular/angular.js')
+    script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-messages.js")
     script(src='libs/angular-resource/angular-resource.js')
     script(src='libs/angular-route/angular-route.js')
+    script(src='libs/angular-cookies/angular-cookies.js')
+    script(src='libs/angular-sanitize/angular-sanitize.js')
     script(src='libs/angular-animate/angular-animate.js')
     script(src='libs/angular-foundation/mm-foundation-tpls.js')
     script(src='libs/dz-assets/js/vendor/jquery.js')
@@ -38,5 +41,12 @@ block content
     script(src='js/controllers/formations.js')
     script(src='js/controllers/profil.js')
     script(src='js/controllers/contact.js')
+    script(src='js/controllers/login.js')
+    script(src='js/controllers/signup.js')
+    script(src='js/controllers/settings.js')
+    script(src='js/services/api.js')
+    script(src='js/services/auth.js')
+    script(src='js/services/session.js')
+    script(src='js/services/user.js')
     script(src='js/directives/mongooseError.js')
     script $(document).foundation();

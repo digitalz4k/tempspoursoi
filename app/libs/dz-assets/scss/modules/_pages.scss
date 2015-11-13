@@ -18,7 +18,7 @@
     }
     .cb-slideshow:after { 
         content: '';
-        background: transparent url(../images/pattern.png) repeat top left; 
+        background: transparent repeat top left; 
     }
 
     .cb-slideshow li {
@@ -320,100 +320,159 @@
 .contact-page {
     padding-top: 175px;
     font-family: $serif-font;
-}
-
-.contact-title {
+    
+    .contact-title {
     background: #f9b35c;
     height: 81px;
     z-index: 9998!important;
     margin-bottom: 75px;
 
-    .title {
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        font-weight: 700;
-        font-style: bold;
-        line-height: 1.1;
-        margin-top: 25px;
-    }
-    i {
-        background: #fff;
-        height: 50px;
-        width: 50px;
-        border-radius: 50px;
-        text-align: center;
-        margin-top: -48px;
-        margin-right: -42px;
-        color: #f9b35c;
-    }
-    .fa { padding-top: 18px;}
-}
-.contact-social {
-    z-index: 1;
-}
-
-.contact-description {
-    span, a, i { color: #f08875; font-weight: bold; }
-
-    ul, li { list-style: none;}
-}
-
-form {
-    
-    .ng-valid       {  }
-    .ng-invalid     {  }
-    .ng-pristine    {  }
-    .ng-dirty       {  }
-    .ng-touched     {  }
-    
-    .form-group {
-    
-        input, textarea {
-          display: block;
-          margin: 0;
-          width: 100%;          
-          appearance: none;
-          box-shadow: none;
-          border-radius: none;
-          padding: 10px;
-          border: none;
-          border-bottom: solid 1px #f08875;
-          transition: border 0.3s;
-          color: #f08875;
+        .title {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 700;
+            font-style: bold;
+            line-height: 1.1;
+            margin-top: 25px;
         }
-        input[type="text"]:focus, textarea:focus {
-          outline: none;
-          border-bottom: solid 3px #f08875;
-          box-shadow: none;
-          background: none;
-          color: #f08875;
+        i {
+            background: #fff;
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            text-align: center;
+            margin-top: -48px;
+            margin-right: -42px;
+            color: #f9b35c;
         }
+        .fa { padding-top: 18px;}
     }
-    
-    button[disabled] {
-        opacity: 0!important;
-        transition: all 1s linear;
+
+    .contact-social {
+        z-index: 1;
+    }
+
+    .contact-description {
+        span, a, i { color: #f08875; font-weight: bold; }
+
+        ul, li { list-style: none;}
+    }
+
+    form {
+
+        .ng-valid       {  }
+        .ng-invalid     {  }
+        .ng-pristine    {  }
+        .ng-dirty       {  }
+        .ng-touched     {  }
+
+        .form-group {
+
+            input, textarea {
+              display: block;
+              margin: 0;
+              width: 100%;          
+              appearance: none;
+              box-shadow: none;
+              border-radius: none;
+              padding: 10px;
+              border: none;
+              border-bottom: solid 1px #f08875;
+              transition: border 0.3s;
+              color: #f08875;
+            }
+            input[type="text"]:focus, textarea:focus {
+              outline: none;
+              border-bottom: solid 3px #f08875;
+              box-shadow: none;
+              background: none;
+              color: #f08875;
+            }
+        }
+
+        button[disabled] {
+            opacity: 0!important;
+            transition: all 1s linear;
+        }
     }
 }
 
 
 
 // ------------------------------
-//  LOGIN / SIGNUP
+//  LOGIN / SIGNUP / SETTINGS
 // ------------------------------
 .auth-container {
+    position: relative;
     height: 100%;
-    margin-top: -45px;
-    background: url("https://s3.amazonaws.com/ooomf-com-files/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    padding-top: 175px;
+    background: $primary-color;
+    padding-bottom: 3em;
 
-    .panel {
-        margin-top: 99px;
-        background: rgba(255,255,255,0.5);
-        border: none;
+    section {
+        h2 { color: #fff; }
+        
+        .form-group {
+            margin: 10px 0;
+
+            input {
+              display: block;
+              margin: 0;
+              width: 100%;          
+              appearance: none;
+              box-shadow: none;
+              border-radius: none;
+              padding: 10px;
+              border: none;
+              border-bottom: solid 1px $primary-color;
+              transition: border 0.3s;
+              color: #f08875;
+            }
+            input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+              outline: none;
+              border-bottom: solid 3px $primary-color;
+              box-shadow: none;
+              color: #f08875;
+            }
+        }
+        button { margin: 10px 0; }
+    }
+}
+
+.settings-container {
+    position: relative;
+    height: 100%;
+    padding-top: 175px;
+    background: #fff;
+    padding-bottom: 3em;
+    
+    h2 { color: $primary-color; }
+    
+    section {
+        margin: 2em 0;
+        
+        .form-group {
+            margin: 10px 0;
+
+            input, textarea {
+              display: block;
+              margin: 0;
+              width: 100%;          
+              appearance: none;
+              box-shadow: none;
+              border-radius: none;
+              padding: 10px;
+              border: 1px solid $primary-color;
+              color: #888;
+            }
+            input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
+              outline: none;
+              border-bottom: solid 3px $primary-color;
+              box-shadow: none;
+              color: #f08875;
+            }
+        }
+        button { margin: 10px 0; }
     }
 }

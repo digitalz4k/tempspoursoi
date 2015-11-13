@@ -16959,7 +16959,7 @@ th.hide-for-touch {
 }
 .main-container .cb-slideshow:after {
   content: '';
-  background: transparent url(../images/pattern.png) repeat top left;
+  background: transparent repeat top left;
 }
 .main-container .cb-slideshow li {
   list-style-type: none;
@@ -17341,14 +17341,13 @@ th.hide-for-touch {
   padding-top: 175px;
   font-family: "Roboto", serif;
 }
-
-.contact-title {
+.contact-page .contact-title {
   background: #f9b35c;
   height: 81px;
   z-index: 9998 !important;
   margin-bottom: 75px;
 }
-.contact-title .title {
+.contact-page .contact-title .title {
   color: #fff;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -17357,7 +17356,7 @@ th.hide-for-touch {
   line-height: 1.1;
   margin-top: 25px;
 }
-.contact-title i {
+.contact-page .contact-title i {
   background: #fff;
   height: 50px;
   width: 50px;
@@ -17367,23 +17366,20 @@ th.hide-for-touch {
   margin-right: -42px;
   color: #f9b35c;
 }
-.contact-title .fa {
+.contact-page .contact-title .fa {
   padding-top: 18px;
 }
-
-.contact-social {
+.contact-page .contact-social {
   z-index: 1;
 }
-
-.contact-description span, .contact-description a, .contact-description i {
+.contact-page .contact-description span, .contact-page .contact-description a, .contact-page .contact-description i {
   color: #f08875;
   font-weight: bold;
 }
-.contact-description ul, .contact-description li {
+.contact-page .contact-description ul, .contact-page .contact-description li {
   list-style: none;
 }
-
-form .form-group input, form .form-group textarea {
+.contact-page form .form-group input, .contact-page form .form-group textarea {
   display: block;
   margin: 0;
   width: 100%;
@@ -17396,31 +17392,89 @@ form .form-group input, form .form-group textarea {
   transition: border 0.3s;
   color: #f08875;
 }
-form .form-group input[type="text"]:focus, form .form-group textarea:focus {
+.contact-page form .form-group input[type="text"]:focus, .contact-page form .form-group textarea:focus {
   outline: none;
   border-bottom: solid 3px #f08875;
   box-shadow: none;
   background: none;
   color: #f08875;
 }
-form button[disabled] {
+.contact-page form button[disabled] {
   opacity: 0 !important;
   transition: all 1s linear;
 }
 
 .auth-container {
+  position: relative;
   height: 100%;
-  margin-top: -45px;
-  background: url("https://s3.amazonaws.com/ooomf-com-files/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  padding-top: 175px;
+  background: #f08875;
+  padding-bottom: 3em;
 }
-.auth-container .panel {
-  margin-top: 99px;
-  background: rgba(255, 255, 255, 0.5);
+.auth-container section h2 {
+  color: #fff;
+}
+.auth-container section .form-group {
+  margin: 10px 0;
+}
+.auth-container section .form-group input {
+  display: block;
+  margin: 0;
+  width: 100%;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  padding: 10px;
   border: none;
+  border-bottom: solid 1px #f08875;
+  transition: border 0.3s;
+  color: #f08875;
+}
+.auth-container section .form-group input[type="text"]:focus, .auth-container section .form-group input[type="password"]:focus, .auth-container section .form-group input[type="email"]:focus {
+  outline: none;
+  border-bottom: solid 3px #f08875;
+  box-shadow: none;
+  color: #f08875;
+}
+.auth-container section button {
+  margin: 10px 0;
+}
+
+.settings-container {
+  position: relative;
+  height: 100%;
+  padding-top: 175px;
+  background: #fff;
+  padding-bottom: 3em;
+}
+.settings-container h2 {
+  color: #f08875;
+}
+.settings-container section {
+  margin: 2em 0;
+}
+.settings-container section .form-group {
+  margin: 10px 0;
+}
+.settings-container section .form-group input, .settings-container section .form-group textarea {
+  display: block;
+  margin: 0;
+  width: 100%;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  padding: 10px;
+  border: 1px solid #f08875;
+  color: #888;
+}
+.settings-container section .form-group input[type="text"]:focus, .settings-container section .form-group input[type="password"]:focus, .settings-container section .form-group input[type="email"]:focus, .settings-container section .form-group textarea:focus {
+  outline: none;
+  border-bottom: solid 3px #f08875;
+  box-shadow: none;
+  color: #f08875;
+}
+.settings-container section button {
+  margin: 10px 0;
 }
 
 html, body {

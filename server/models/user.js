@@ -72,7 +72,7 @@ UserSchema
     // if you are authenticating by any of the oauth strategies, don't validate
     if (authTypes.indexOf(this.provider) !== -1) return true;
     return email.length;
-  }, 'Email cannot be blank');
+  }, 'Cela ne peut pas être vide');
 
 // Validate empty password
 UserSchema
@@ -81,7 +81,7 @@ UserSchema
     // if you are authenticating by any of the oauth strategies, don't validate
     if (authTypes.indexOf(this.provider) !== -1) return true;
     return hashedPassword.length;
-  }, 'Password cannot be blank');
+  }, 'Cela ne peut pas être vide');
 
 // Validate email is not taken
 UserSchema
@@ -96,7 +96,7 @@ UserSchema
       }
       respond(true);
     });
-}, 'The specified email address is already in use.');
+}, 'Cette adresse email est déjà utilisée.');
 
 var validatePresenceOf = function(value) {
   return value && value.length;
@@ -110,7 +110,7 @@ UserSchema
     if (!this.isNew) return next();
 
     if (!validatePresenceOf(this.hashedPassword) && authTypes.indexOf(this.provider) === -1)
-      next(new Error('Invalid password'));
+      next(new Error('Mot de passe invalide'));
     else
       next();
   });
