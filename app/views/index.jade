@@ -1,12 +1,9 @@
 extends layout
 
 block content
-    div(ng-controller="WrapperCtrl")
-        div(class="splash" ng-hide="loaded")
-            div.preboot-loader.small-12.columns
-                img(src="img/loader.gif")
-                p  Veuillez patienter pendant le chargement de l'application Un Temps pour Soi...
-        div(ng-cloak="" class="wrapper" ng-show="loaded")
+    div
+        
+        div(class="wrapper")
             .inner-wrap
                 div(ng-include='\'partials/header\'')
                 div(ng-view, class="view-frame {{ pageClass }}")
@@ -38,7 +35,7 @@ block content
 
     // Loading App Scripts
     script(src='js/app.js')
-    script(src='js/controllers/wrapper.js')
+    //script(src='js/controllers/wrapper.js')
     script(src='js/controllers/header.js')
     script(src='js/controllers/main.js')
     script(src='js/controllers/public.js')
