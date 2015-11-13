@@ -20,6 +20,7 @@ var express = require('express'),
  */
 module.exports = function(app) {
     app.use(cors());
+    app.use(require('prerender-node').set('prerenderToken', 'HcRXuPzPc0wttPUNedzW'));
     app.use(favicon(config.root + '/app/img/favicon.ico'));
     app.use(express.static(path.join(config.root, '.tmp')));
     app.use(express.static(path.join(config.root, 'app')));
