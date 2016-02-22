@@ -25,13 +25,7 @@ module.exports = function(app) {
             from: req.body.name + req.body.email,
             to: 'untempspoursoi26@live.fr',
             subject: "Contact de " + req.body.name,
-            text: 'Nom : ' + req.body.name + "Email : " + req.body.email + "Société : " + req.body.entreprise + "Téléphone : " + req.body.phone + "Message : " + req.body.message,
-            html: `<b style='color: #006600'>Contact</b>
-                   <p>Nom: ${req.body.name}</p>
-                   <p>Société: ${req.body.entreprise}</p>
-                   <p>Téléphone: ${req.body.phone}</p>
-                   <p>Email: ${req.body.email}</p>
-                   <p>Message: ${req.body.message}</p>`
+            text: 'Nom : ' + req.body.name + "Email : " + req.body.email + "Société : " + req.body.entreprise + "Téléphone : " + req.body.phone + "Message : " + req.body.message
         };
         transporter.sendMail(mailOptions, function(error, info){
             if(error){

@@ -39,6 +39,8 @@ module.exports = function(app) {
     // Persist sessions with mongoStore
     app.use(session({
         secret: 'ilovevodkavodkavodkavodkaprasempre',
+        resave: true,
+        saveUninitialized: true,
         store: new mongoStore({
           url: config.mongo.uri,
           collection: 'sessions'
